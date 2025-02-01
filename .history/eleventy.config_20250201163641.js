@@ -7,12 +7,10 @@ const isProdDeployment = Boolean(
   process.env.ELEVENTY_RUN_MODE
   && process.env.ELEVENTY_RUN_MODE === 'build'
 )
-const outDir = 'docs';
+const outDir = isPages ? 'docs' : 'public'
 
 export default async function(config) {
-  config.addPlugin(EleventyHtmlBasePlugin, {
-      baseHref: "/",
-  });
+  config.addPlugin(EleventyHtmlBasePlugin)
 
   // shortcode to render markdown from string => {{ STRING | markdown | safe }}
   config.addFilter('markdown', function(value) {
