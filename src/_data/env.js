@@ -1,7 +1,5 @@
-const isPages = process.env.ELEVENTY_ENV === 'pages'
+const isPages = process.env.ELEVENTY_ENV === "pages";
 
 export default {
-  baseUrl: isPages
-    ? '/11ty-landing-page/'
-    : '/'
-}
+    baseUrl: isPages ? "/asing44.github.io/" : "/",
+};
