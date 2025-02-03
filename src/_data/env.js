@@ -1,5 +1,5 @@
 const isPages = process.env.ELEVENTY_ENV === 'pages'
 
 export default {
-    baseUrl: "/Temp-Portfolio/",
+    baseUrl: isPages ? "/Temp-Portfolio/" : "/",
 };
