@@ -11,7 +11,7 @@ const outDir = 'docs';
 
 export default async function(config) {
   config.addPlugin(EleventyHtmlBasePlugin, {
-      baseHref: "/",
+      baseHref: "Temp-Portfolio",
   });
 
   // shortcode to render markdown from string => {{ STRING | markdown | safe }}
